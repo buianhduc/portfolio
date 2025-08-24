@@ -7,6 +7,7 @@ import {useRouter} from "next/navigation";
 import {Projects} from "@/app/data";
 import {Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious} from "@/components/ui/carousel";
 import {FaGithub, FaGlobe} from "react-icons/fa";
+import { IoMdDocument } from "react-icons/io";
 
 interface IModalProps {
   project: IProjectCardProps;
@@ -33,7 +34,7 @@ interface IProjectCardProps {
   technologies: string[],
   links: {
     link: string,
-    source: "Github" | "Website" | "Devpost"
+    source: "Github" | "Website" | "Devpost" | 'Report Link',
   }[],
 }
 
@@ -98,6 +99,7 @@ const ProjectCard = ({id, image, title, description, achievements, technologies,
                   {link.source == "Devpost" &&
                       <DevpostLogo/>}
                   {link.source == "Website" && <FaGlobe/>}
+                  {link.source == "Report Link" && <IoMdDocument />}
                   {link.source}
                 </a>
             ))}
