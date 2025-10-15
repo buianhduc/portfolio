@@ -56,7 +56,7 @@ function Experience() {
               <h3>
                 <b>AndAI - AI Engineer</b>
               </h3>
-              <p><b>Mar/2025 - Present</b></p>
+              <p><b>Mar/2025 - Jul/2025</b></p>
               <ul>
                 <li>
                   Fine-tuned AI models using Unsloth, improving model efficiency and inference speed by 40%, optimizing performance and accuracy

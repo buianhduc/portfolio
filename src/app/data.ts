@@ -12,6 +12,25 @@ export type ProjectSchema = {
 };
 export const Projects: ProjectSchema[] = [
   {
+    id: 4,
+    name: '3D Rendering Program',
+    thumbnail: [
+      '/ProjectAssets/Kraig.jpeg',
+    ],
+    description: 'A platform for event ticketing and attendee matchmaking powered by AI',
+    achievements: [
+      'Built a custom 3D rendering engine in C with TIGR, implementing matrix and vector operations to render Wavefront (.obj) models; earned 2nd place at Codebrew Hackathon.',
+      'Implemented core linear algebra operations (matrix multiplication, vector transformations) to perform 3D object translation, rotation, and scaling to develop perspective projection algorithms to convert 3D coordinates into accurate 2D screen space',
+    ],
+    technologies: ['C'],
+    links: [
+      {
+        link: 'https://devpost.com/software/kraig',
+        source: 'Devpost',
+      },
+    ],
+  },
+  {
     id: 1,
     name: 'Medical Pantry - Image Recognizer and Inventory Manager',
     description:
@@ -33,6 +52,7 @@ export const Projects: ProjectSchema[] = [
     ],
     technologies: ['TailwindCSS', 'NextJS', 'Firebase', 'Typescript', 'React'],
   },
+  
   {
     id: 2,
     name: 'Books Store Collaborative Recommender System',
@@ -83,25 +103,7 @@ export const Projects: ProjectSchema[] = [
       },
     ],
   },
-  {
-    id: 4,
-    name: '3D Rendering Program',
-    thumbnail: [
-      '/ProjectAssets/Kraig.jpeg',
-    ],
-    description: 'A platform for event ticketing and attendee matchmaking powered by AI',
-    achievements: [
-      'Built a custom 3D rendering engine in C with TIGR, implementing matrix and vector operations to render Wavefront (.obj) models; earned 2nd place at Codebrew Hackathon.',
-      'Implemented core linear algebra operations (matrix multiplication, vector transformations) to perform 3D object translation, rotation, and scaling to develop perspective projection algorithms to convert 3D coordinates into accurate 2D screen space',
-    ],
-    technologies: ['C'],
-    links: [
-      {
-        link: 'https://devpost.com/software/kraig',
-        source: 'Devpost',
-      },
-    ],
-  },
+  
   {
     id: 5,
     name: 'German Traffic Signs Recogniser',
